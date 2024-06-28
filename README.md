@@ -2,6 +2,8 @@
 
 This project contains the code used for the _Sketching into the Metaverse_ demo presented at AIUK2023. In this demo, the user draws a 3D sketch in the VR environment. The backend search engine retrieves the closest matching shapes from the database based on the sketch. Currently, the retrieval model used is from paper [Structure-Aware 3D VR Sketch to 3D Shape Retrieval](https://github.com/Rowl1ng/Structure-Aware-VR-Sketch-Shape-Retrieval), so only the chair class is used as an example.
 
+## Demo process:
+
 After running the demo on the host machine, the user puts on the headset and enters a virtual living room. In front of them, there is a cube labeled `Sketch Space`. 
 1. __Sketch__: The user can use the right-hand controller to freely draw a chair sketch in the sketch space by pressing the `Sketch` trigger. During this process, users can use the `Grab` trigger at any time to rotate the entire sketch space, and use the `Undo` button on the left-hand controller to undo the last stroke. (Please refer to the operation guide below for the triggers and buttons)
 2. __Search__: Once finished, the user can click the `Search` button on the TV using the `Click Button` on the right-hand controller to trigger a search. The top 1 search result will immediately appear in the `Sketch Space` cube. If the user want to see more results, press the `More Results` button on the left-hand controller. Pressing it again will hide the additional results. 
@@ -26,8 +28,9 @@ The demo project consists of two parts:
 1. `retrieval_inference`: Backend inference code based on Python 
 2. `Sketch_VR`: VR interface using Unity
 
-To run the demo:
-# Step 1: retrieval_inference
+## To run the demo:
+
+### Step 1: retrieval_inference
 
 Open `retrieval_inference` in Visual Studio Code. 
 Create your own conda environment, then install the necessary packages by running:
@@ -36,7 +39,7 @@ pip install -r requirements.txt
 ```
 Run `main.py` from `retrieval_inference`.
 
-# Step 2: Sketch_VR_demo
+### Step 2: Sketch_VR_demo
 
 First, set up the Oculus environment and ensure it is functioning properly.
 
