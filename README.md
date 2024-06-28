@@ -1,5 +1,6 @@
+# Sketching into the Metaverse
 
-This project contains the code used for the _Sketch into Metaverse_ demo presented at AIUK2023. 
+This project contains the code used for the _Sketching into the Metaverse_ demo presented at AIUK2023. In this demo, the user draws a 3D sketch in the VR environment. The backend search engine retrieves the closest matching shapes from the database based on the sketch. Currently, the retrieval model used is from paper [Structure-Aware 3D VR Sketch to 3D Shape Retrieval](https://github.com/Rowl1ng/Structure-Aware-VR-Sketch-Shape-Retrieval), so only the chair class is used as an example.
 
 After running the demo on the host machine, the user puts on the headset and enters a virtual living room. In front of them, there is a cube labeled `Sketch Space`. 
 1. __Sketch__: The user can use the right-hand controller to freely draw a chair sketch in the sketch space by pressing the `Sketch` trigger. During this process, users can use the `Grab` trigger at any time to rotate the entire sketch space, and use the `Undo` button on the left-hand controller to undo the last stroke. (Please refer to the operation guide below for the triggers and buttons)
@@ -9,6 +10,7 @@ After running the demo on the host machine, the user puts on the headset and ent
 3. __End__: When finishing the game, click the `Exit` button on the door.
 
 ![game](game.gif)
+
 Please refer to [the demo video](https://www.youtube.com/watch?v=bwabdXnS-Zo&t=73s&ab_channel=LingLuo) for the complete process after running the demo.
 
 The controller operation guide is shown in the following figure and is also visible in the virtual room.
